@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrique Correa | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Checkbox invisível para controlar o efeito do Vasco sem JS -->
+  <input type="checkbox" id="vasco-toggle" class="vasco-checkbox">
+
+  <!-- Navbar Fixa -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="#inicial" class="logo">HC<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#inicial">Inicial</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#sobre-mim">Sobre Mim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção 1: Inicial (Hero) -->
+    <section id="inicial" class="hero-section">
+      <div class="hero-content">
+        <span class="badge">Desenvolvedor & Estudante de TI</span>
+        <h1 class="hero-title">Henrique Correa</h1>
+        <p class="hero-subtitle">Bem-vindo ao meu portfólio pessoal.</p>
+        
+        <a href="#formacao" class="scroll-indicator" aria-label="Rolar para baixo">
+          <span>Role para explorar</span>
+          <div class="chevron"></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção 2: Formação -->
+    <section id="formacao" class="section-container">
+      <h2 class="section-title">Formação & Conhecimentos</h2>
+      
+      <div class="cards-grid">
+        <div class="card slide-from-left">
+          <div class="card-tag">Ensino Superior</div>
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <p class="card-institution">FATEC</p>
+          <p>Foco em engenharia de software, lógica de programação estruturada e orientada a objetos, bancos de dados e desenvolvimento de sistemas integrados.</p>
+        </div>
+
+        <div class="card slide-from-right">
+          <div class="card-tag">Sistemas Operacionais</div>
+          <h3>Administração de Sistemas Linux</h3>
+          <p class="card-institution">CentOS & Shell CLI</p>
+          <p>Experiência prática em ambiente de linha de comando, configuração de redes virtuais (VirtualBox/SSH), automação e gerenciamento de permissões/arquivos.</p>
+        </div>
+
+        <div class="card slide-from-left">
+          <div class="card-tag">Inteligência Artificial</div>
+          <h3>Machine Learning & Python</h3>
+          <p class="card-institution">TensorFlow / Keras</p>
+
+          <p>Desenvolvimento de Redes Neurais Convolucionais (CNN) para classificação visual e implementação de algoritmos de aprendizado supervisionado.</p>
+        </div>
+
+        <div class="card slide-from-right">
+          <div class="card-tag">Desenvolvimento Web</div>
+          <h3>Front-End & APIs</h3>
+          <p class="card-institution">HTML5, CSS3, Flask</p>
+          <p>Criação de interfaces responsivas, modernas e integração de modelos Python via microframework Flask.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 3: Sobre Mim -->
+    <section id="sobre-mim" class="section-container">
+      <h2 class="section-title">Sobre Mim</h2>
+
+      <div class="about-grid">
+        <div class="about-card slide-from-left">
+          <h3>Trabalho e Projetos</h3>
+          <p>
+            Atuo no desenvolvimento de soluções tecnológicas unindo a robustez do backend com Python e a flexibilidade do desenvolvimento web. Tenho experiência com criação de APIs, automação em Linux e modelagem de aprendizado de máquina.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Linux</span>
+            <span>Flask</span>
+            <span>HTML/CSS</span>
+            <span>SQL / MongoDB</span>
+          </div>
+        </div>
+
+        <div class="about-card vasco-card slide-from-right">
+          <h3>Paixão Nacional ⚽</h3>
+          <p>
+            Além do código e da tecnologia, sou torcedor apaixonado do <strong>Gigante da Colina</strong>!
+          </p>
+          
+          <!-- Botão que ativa a modal do Vasco via CSS -->
+          <label for="vasco-toggle" class="btn-vasco">
+            <span class="cross">✠</span> Ativar Modo Cruzmaltino
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Overlay / Modal do Escudo do Vasco Girando -->
+  <div class="vasco-overlay">
+    <label for="vasco-toggle" class="close-btn" title="Fechar">&times;</label>
+    <div class="vasco-content">
+      <img src="https://upload.wikimedia.org/wikipedia/pt/a/ac/CRVascoDaGama.svg" alt="Escudo do Vasco da Gama" class="spinning-shield">
+      <h2>CASACA! CASACA! ◤✠◢</h2>
+      <p>Vasco da Gama!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Henrique Correa. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
