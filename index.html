@@ -1,171 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Henrique Correa | Portfólio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrique Correa - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-  <!-- Checkbox invisível para controlar o efeito do Vasco sem JS -->
-  <input type="checkbox" id="vasco-toggle" class="vasco-checkbox">
-
-  <!-- Navbar Fixa -->
-  <header class="navbar-container">
-    <nav class="navbar">
-      <a href="#inicial" class="logo">HC<span>.</span></a>
-      <ul class="nav-links">
-        <li><a href="#inicial">Inicial</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#tccs">TCCs</a></li>
-        <li><a href="#sobre-mim">Sobre Mim</a></li>
-        <li><a href="projetos.html" class="nav-btn">Projetos</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Seção 1: Inicial (Hero) -->
-    <section id="inicial" class="hero-section">
-      <div class="hero-content">
-        <span class="badge">Estagiário de QA @ VILT Group | FATEC Indaiatuba</span>
-        <h1 class="hero-title">Henrique Correa</h1>
-        <p class="hero-subtitle">QA, Automação de Testes & Desenvolvimento de Software | Indaiatuba - SP</p>
-        
-        <a href="#experiencia" class="scroll-indicator" aria-label="Rolar para baixo">
-          <span>Role para explorar</span>
-          <div class="chevron"></div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Seção 2: Experiência Profissional -->
-    <section id="experiencia" class="section-container">
-      <h2 class="section-title">Experiência Profissional</h2>
-
-      <div class="cards-grid">
-        <div class="card slide-from-left" style="grid-column: 1 / -1;">
-          <div class="card-tag">Atuação Atual • 100% Remote</div>
-          <h3>Estagiário em QA & Automação de Testes</h3>
-          <p class="card-institution">VILT Group (Multinacional Europeia)</p>
-          <p>
-            Atuação em Quality Assurance focado em garantia de qualidade do software, execução e planejamento de testes manuais, além do desenvolvimento de processos de automação de testes para assegurar entregas eficientes e de alta performance.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção 3: Formação & Conhecimentos -->
-    <section id="formacao" class="section-container">
-      <h2 class="section-title">Formação & Conhecimentos</h2>
-      
-      <div class="cards-grid">
-        <div class="card slide-from-left">
-          <div class="card-tag">Ensino Superior</div>
-          <h3>Desenvolvimento de Software Multiplataforma (2º Semestre)</h3>
-          <p class="card-institution">FATEC Indaiatuba</p>
-          <p>Foco em engenharia de software, desenvolvimento web/mobile, arquitetura de sistemas e metodologias ágeis.</p>
-        </div>
-
-        <div class="card slide-from-right">
-          <div class="card-tag">Ensino Técnico</div>
-          <h3>Técnico em Informática</h3>
-          <p class="card-institution">Formação Técnica</p>
-          <p>Base sólida em lógica de programação, desenvolvimento web, orientação a objetos, banco de dados e manutenção de sistemas.</p>
-        </div>
-
-        <div class="card slide-from-left">
-          <div class="card-tag">Ensino Técnico + Médio</div>
-          <h3>Técnico em Administração</h3>
-          <p class="card-institution">Ensino Médio Técnico Integrado</p>
-          <p>Visão de negócios, gestão de processos, planejamento estratégico e análise de mercado aplicados à tecnologia.</p>
-        </div>
-
-        <div class="card slide-from-right">
-          <div class="card-tag">Stack Tecnológica</div>
-          <h3>Linguagens, Bancos & Cloud</h3>
-          <p class="card-institution">Conhecimentos Práticos</p>
-          <p><strong>Linguagens:</strong> Python, JavaScript, Java, Portugol<br>
-             <strong>Bancos de Dados:</strong> MySQL, MongoDB<br>
-             <strong>DevOps & QA:</strong> AWS (Deploy), Automação & Testes Manuais</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção 4: TCCs e Destaques -->
-    <section id="tccs" class="section-container">
-      <h2 class="section-title">Trabalhos de Conclusão de Curso (TCC)</h2>
-
-      <div class="cards-grid">
-        <div class="card slide-from-left">
-          <div class="card-tag">TCC - Tecnologia da Informação</div>
-          <h3>Plataforma Web de Adoção de Animais</h3>
-          <p class="card-institution">Deploy na AWS</p>
-          <p>Aplicação web completa desenvolvida para simplificar e otimizar o processo de adoção de animais, conectando ONGs a potenciais adotantes de forma prática e centralizada.</p>
-        </div>
-
-        <div class="card slide-from-right">
-          <div class="card-tag">TCC - Administração</div>
-          <h3>IA no Mercado de Trabalho</h3>
-          <p class="card-institution">Pesquisa & Análise Estratégica</p>
-          <p>Estudo aprofundado sobre os impactos, transformações e oportunidades trazidos pela Inteligência Artificial na gestão, automação de processos e mercado de trabalho moderno.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção 5: Sobre Mim -->
-    <section id="sobre-mim" class="section-container">
-      <h2 class="section-title">Sobre Mim</h2>
-
-      <div class="about-grid">
-        <div class="about-card slide-from-left">
-          <div class="card-tag">Perfil Profissional</div>
-          <h3>Henrique Correa Magalhães Prates</h3>
-          <p>
-            Tenho 18 anos, nasci e cresci em Indaiatuba - SP. Atualmente sou estagiário na multinacional VILT Group focando em QA e Automação de Testes. Unindo minha formação técnica em Administração e Informática ao ensino superior na FATEC, busco aplicar as melhores práticas da engenharia de software e qualidade do desenvolvimento à nuvem.
-          </p>
-          <div class="tech-tags">
-            <span>QA & Testes</span>
-            <span>Automação</span>
-            <span>Python</span>
-            <span>JavaScript</span>
-            <span>Java</span>
-            <span>MySQL</span>
-            <span>MongoDB</span>
-            <span>AWS</span>
-          </div>
-        </div>
-
-        <div class="about-card vasco-card slide-from-right">
-          <h3>Paixão Nacional ⚽</h3>
-          <p>
-            Além do código e da tecnologia, sou torcedor apaixonado do <strong>Gigante da Colina</strong>!
-          </p>
-          
-          <!-- Botão que ativa a modal do Vasco via CSS -->
-          <label for="vasco-toggle" class="btn-vasco">
-            <span class="cross">✠</span> Ativar Modo Cruzmaltino
-          </label>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Overlay / Modal do Escudo do Vasco Girando -->
-  <div class="vasco-overlay">
-    <label for="vasco-toggle" class="close-btn" title="Fechar">&times;</label>
-    <div class="vasco-content">
-      <img src="https://lojahepta.com/cdn/shop/collections/Vasco.png?v=1777574917&width=2048" alt="Escudo do Vasco da Gama" class="spinning-shield">
-      <h2>◤✠◢</h2>
-      <p>Vasco da Gama!</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2026 Henrique Correa Magalhães Prates. Todos os direitos reservados.</p>
-  </footer>
-
+    <header>
+        <h1>Henrique Correa</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#experiencia">Experiência</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#formacao">Formação</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="inicio">
+            <p>Desenvolvedor de Software</p>
+            <h2>Olá! Sou o Henrique Correa.</h2>
+            <p>
+                Desenvolvedor de software em constante evolução,
+                apaixonado por tecnologia e aprendizado.
+            </p>
+            <a class="botao" href="#projetos">Ver projetos</a>
+        </section>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou estudante de Desenvolvimento de Software
+                Multiplataforma na FATEC e tenho formação técnica
+                em Informática e Administração pela FIEC.
+            </p>
+            <p>
+                Atualmente faço estágio como QA na VILT Group,
+                realizando testes manuais e aprendendo sobre
+                testes automatizados.
+            </p>
+        </section>
+        <section id="experiencia">
+            <h2>Experiência</h2>
+            <div class="card">
+                <h3>VILT Group - Estagiário de QA</h3>
+                <p>
+                    Realização de testes manuais e aprendizado
+                    de tecnologias utilizadas em testes automatizados.
+                </p>
+            </div>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="card">
+                <h3>PetMatch</h3>
+                <p>
+                    Aplicação web criada para facilitar o processo
+                    de adoção de animais, aproximando ONGs e adotantes.
+                </p>
+                <p><strong>HTML, CSS, Java, JavaScript e MySQL.</strong></p>
+            </div>
+            <div class="card">
+                <h3>IA na Administração Empresarial</h3>
+                <p>
+                    Pesquisa sobre como a inteligência artificial
+                    pode otimizar processos e criar novas possibilidades
+                    dentro das empresas.
+                </p>
+            </div>
+        </section>
+        <section id="formacao">
+            <h2>Formação</h2>
+            <ul>
+                <li>Técnico em Informática - FIEC (Concluído)</li>
+                <li>Técnico em Administração - FIEC (Concluído)</li>
+                <li>DSM - FATEC (Cursando)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Tecnologias</h2>
+            <p>
+                HTML | CSS | JavaScript | Python | Java |
+                MySQL | MongoDB | Git | GitHub
+            </p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>
+                <a href="https://github.com/correahenrique" target="_blank">
+                    GitHub
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/henriquecorreamprates/" target="_blank">
+                    LinkedIn
+                </a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Henrique Correa</p>
+        <p>Curiosidade: sou vascaíno ⚽</p>
+    </footer>
 </body>
+
 </html>
