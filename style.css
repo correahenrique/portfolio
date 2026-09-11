@@ -124,3 +124,23 @@ footer {
         font-size: 30px;
     }
 }
+
+@keyframes mudarCorRGB {
+  0% {
+    color: rgb(255, 0, 0); 
+  }
+  50% {
+    color: rgb(0, 255, 0); 
+  }
+  100% {
+    color: rgb(0, 0, 255);
+  }
+}
+
+.grid-atividades {
+    display: grid;
+    /* Cria até 3 colunas de tamanho igual no mínimo de 280px */
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
+    gap: 20px;
+    margin-top: 25px;
+}
